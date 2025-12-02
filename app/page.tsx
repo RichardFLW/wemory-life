@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-background px-6 text-foreground">
+    <main className="flex min-h-screen items-center justify-center px-6 text-foreground">
       <section className="w-full max-w-2xl space-y-6 text-center">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-foreground/60">
           Base vierge

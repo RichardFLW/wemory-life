@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --dot-color: rgba(23, 23, 23, 0.262);
 }
 
 @theme inline {
@@ -16,11 +17,19 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --dot-color: rgba(237, 237, 237, 0.08);
   }
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    var(--dot-color) 0,
+    var(--dot-color) 1px,
+    transparent 1px
+  );
+  background-size: 22px 22px;
   color: var(--foreground);
   font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
   margin: 0;
