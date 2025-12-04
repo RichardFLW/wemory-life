@@ -30,12 +30,26 @@ export default function RootLayout({
         <div className="flex min-h-screen flex-col">
           <header className="sticky top-0 z-20 border-b border-foreground/10 bg-background/70 backdrop-blur">
             <div className="mx-auto flex h-16 w-full max-w-5xl items-center justify-between px-6">
-              <Link
-                href="/"
-                className="text-base font-semibold tracking-tight text-foreground"
-              >
-                Wemory Life
-              </Link>
+              <div className="flex items-center gap-6">
+                <Link
+                  href="/"
+                  className="text-base font-semibold tracking-tight text-foreground"
+                >
+                  Wemory Life
+                </Link>
+                <Link
+                  href="/protected"
+                  className="text-sm font-medium text-foreground/70 transition hover:text-foreground"
+                >
+                  Espace privé
+                </Link>
+                <Link
+                  href="/todos"
+                  className="text-sm font-medium text-foreground/70 transition hover:text-foreground"
+                >
+                  Todos
+                </Link>
+              </div>
               <Link
                 href="/auth"
                 className="inline-flex items-center gap-2 rounded-full border border-foreground/15 bg-foreground px-4 py-2 text-sm font-semibold text-background shadow-sm transition hover:-translate-y-0.5 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-foreground/50"
